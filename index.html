@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spotted Dog Pet Spa | Premium Dog Grooming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Poppins for Professional & Fun vibe -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Poppins:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Poppins for Hero titles */
+        .font-hero {
+            font-family: 'Poppins', sans-serif;
+        }
+        h2, h3, .font-display {
+            font-family: 'Quicksand', sans-serif;
+        }
+        .bg-cream { background-color: #FFF9F1; }
+        .text-navy { color: #1A237E; }
+        .bg-navy { background-color: #1A237E; } 
+        .bg-sky-light { background-color: #E3F2FD; }
+        
+        .custom-shadow {
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        #main-header.scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header / Navigation -->
+    <header id="main-header" class="fixed top-0 w-full z-50 transition-all duration-300 py-4 px-6 lg:px-12 flex justify-between items-center bg-white md:bg-transparent">
+        <div class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-navy rounded-full flex items-center justify-center text-white font-bold">SD</div>
+            <span class="text-xl font-bold text-navy tracking-tight">The Spotted Dog Pet Spa</span>
+        </div>
+        
+        <nav class="hidden md:flex gap-8 font-semibold text-gray-700">
+            <a href="#about" class="hover:text-blue-600 transition">About</a>
+            <a href="#services" class="hover:text-blue-600 transition">Services</a>
+            <a href="#gallery" class="hover:text-blue-600 transition">Gallery</a>
+            <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
+        </nav>
+
+        <div class="flex items-center gap-4">
+            <a href="tel:+15551234567" class="hidden sm:flex items-center gap-2 text-navy font-bold hover:underline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                (555) 123-4567
+            </a>
+            <a href="#booking" class="bg-navy text-white px-5 py-2.5 rounded-full font-bold hover:bg-blue-800 transition shadow-lg text-sm sm:text-base">Book Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 lg:px-12 bg-cream min-h-[90vh] flex items-center overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8 text-center lg:text-left">
+                <div class="inline-block bg-sky-light text-blue-700 px-4 py-1 rounded-full font-bold text-sm uppercase tracking-widest">
+                    Paws-itively Professional
+                </div>
+                <!-- Main Title -->
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-navy leading-tight font-hero tracking-tight">
+                    Premium Care for Your Best Friend.
+                </h1>
+                <p class="text-xl text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Local, certified grooming in [City Name, State]. From refreshing baths to show-stopping cuts, we treat every dog like royalty.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#booking" class="bg-navy text-white px-12 py-5 rounded-full font-bold text-lg hover:bg-blue-800 hover:scale-105 transition shadow-xl text-center min-w-[200px]">Book Now</a>
+                </div>
+                <div class="flex items-center justify-center lg:justify-start gap-4 pt-4">
+                    <div class="flex -space-x-3">
+                        <div class="w-12 h-12 rounded-full border-2 border-white bg-gray-200"></div>
+                        <div class="w-12 h-12 rounded-full border-2 border-white bg-gray-300"></div>
+                        <div class="w-12 h-12 rounded-full border-2 border-white bg-gray-400"></div>
+                    </div>
+                    <p class="text-sm font-medium text-gray-500">Trusted by 500+ local pet parents</p>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-10 -right-10 w-64 h-64 bg-sky-light rounded-full blur-3xl opacity-60"></div>
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl rotate-2">
+                    <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=1000" alt="Happy Golden Retriever at Spa" class="w-full h-auto">
+                    <div class="absolute bottom-6 right-6 bg-white/90 backdrop-blur p-4 rounded-xl shadow-lg border border-white/50">
+                        <p class="text-xs font-bold text-gray-400 uppercase">After Full Groom</p>
+                        <p class="text-navy font-bold italic">"Max looks incredible!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-4 pt-12">
+                    <div class="bg-sky-light aspect-square rounded-2xl overflow-hidden shadow-md border-2 border-white">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover" alt="Shih Tzu Grooming">
+                    </div>
+                    <div class="bg-gray-100 aspect-[3/4] rounded-2xl overflow-hidden shadow-md">
+                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover" alt="Happy Dog">
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-gray-100 aspect-[3/4] rounded-2xl overflow-hidden shadow-md">
+                        <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover" alt="Dog Haircut">
+                    </div>
+                    <div class="bg-cream aspect-square rounded-2xl overflow-hidden shadow-md flex items-center justify-center p-6 text-center border-2 border-dashed border-sky-200">
+                         <span class="text-sky-400 font-bold font-display text-lg tracking-tight leading-tight">We Love Every Breed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <h2 class="text-4xl font-bold text-navy">Where Compassion Meets Professionalism</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Founded with a simple belief: grooming should be a highlight of your dog's month, not a stressor. At The Spotted Dog, our AKC-certified groomers use low-stress techniques and premium organic shampoos to ensure your pet is happy, healthy, and smelling amazing.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <div class="mt-1 w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0">✓</div>
+                        <div>
+                            <p class="font-bold text-navy">Certified Groomers</p>
+                            <p class="text-gray-500">Over 15 years of combined experience in breed-specific styling.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="mt-1 w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0">✓</div>
+                        <div>
+                            <p class="font-bold text-navy">Eco-Friendly Products</p>
+                            <p class="text-gray-500">Only hypoallergenic, sulfate-free, and pet-safe formulas.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="mt-1 w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0">✓</div>
+                        <div>
+                            <p class="font-bold text-navy">Safety First</p>
+                            <p class="text-gray-500">Full sanitation between appointments and 24/7 monitoring.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-sky-light px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl font-bold text-navy">Our Grooming Packages</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Simple, transparent pricing. Rates vary slightly based on breed, size, and coat condition.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Bath & Brush -->
+                <div class="bg-white rounded-3xl p-8 custom-shadow flex flex-col hover:-translate-y-2 transition">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-navy mb-2">Bath & Brush</h3>
+                        <p class="text-gray-500 text-sm italic">Perfect for short-haired breeds</p>
+                    </div>
+                    <p class="text-4xl font-bold text-navy mb-8">Starts at $45</p>
+                    <ul class="space-y-3 mb-12 flex-grow text-gray-600">
+                        <li class="flex items-center gap-2">● Hydrating Bath</li>
+                        <li class="flex items-center gap-2">● Thorough Brush-out</li>
+                        <li class="flex items-center gap-2">● Ear Cleaning</li>
+                        <li class="flex items-center gap-2">● Nail Trimming</li>
+                        <li class="flex items-center gap-2">● Scented Spritz</li>
+                    </ul>
+                    <a href="#booking" class="block text-center border-2 border-navy text-navy py-3 rounded-full font-bold hover:bg-navy hover:text-white transition">Book This</a>
+                </div>
+
+                <!-- Full Groom (Premium Choice) -->
+                <div class="bg-navy rounded-3xl p-8 shadow-2xl text-white flex flex-col scale-105 relative z-10">
+                    <div class="absolute top-4 right-8 bg-blue-400 text-xs font-bold uppercase py-1 px-3 rounded-full">Most Popular</div>
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold mb-2">The Full Groom</h3>
+                        <p class="text-blue-200 text-sm italic">The works for a perfect look</p>
+                    </div>
+                    <p class="text-4xl font-bold mb-8">Starts at $85</p>
+                    <ul class="space-y-3 mb-12 flex-grow">
+                        <li class="flex items-center gap-2">● Includes everything in Bath</li>
+                        <li class="flex items-center gap-2">● Breed-specific Haircut</li>
+                        <li class="flex items-center gap-2">● Sanitary Trim</li>
+                        <li class="flex items-center gap-2">● Paw Pad Trimming</li>
+                        <li class="flex items-center gap-2">● Gland Expression</li>
+                    </ul>
+                    <a href="#booking" class="block text-center bg-white text-navy py-3 rounded-full font-bold hover:bg-sky-light transition">Select Package</a>
+                </div>
+
+                <!-- Puppy Package -->
+                <div class="bg-white rounded-3xl p-8 custom-shadow flex flex-col hover:-translate-y-2 transition">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-navy mb-2">Puppy Spa Intro</h3>
+                        <p class="text-gray-500 text-sm italic">For pups under 6 months</p>
+                    </div>
+                    <p class="text-4xl font-bold text-navy mb-8">Starts at $35</p>
+                    <ul class="space-y-3 mb-12 flex-grow text-gray-600">
+                        <li class="flex items-center gap-2">● Gentle Warm Bath</li>
+                        <li class="flex items-center gap-2">● Slow Blow Dry</li>
+                        <li class="flex items-center gap-2">● Nail Trimming</li>
+                        <li class="flex items-center gap-2">● Eye & Feet Trim</li>
+                        <li class="flex items-center gap-2">● Positive Reinforcement</li>
+                    </ul>
+                    <a href="#booking" class="block text-center border-2 border-navy text-navy py-3 rounded-full font-bold hover:bg-navy hover:text-white transition">Book This</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 px-6 lg:px-12 max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-navy mb-12 tracking-tight">Loved by Pets, Trusted by Owners</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-cream p-8 rounded-2xl italic text-gray-700 relative text-left">
+                <span class="absolute -top-4 left-8 text-6xl text-blue-200">“</span>
+                <p class="mb-6">"Hands down the best grooming experience in town. My Goldendoodle is very anxious, but they were so patient with her. She came home smelling like a dream!"</p>
+                <div class="flex items-center gap-4 not-italic">
+                    <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                    <div class="leading-tight">
+                        <p class="font-bold text-navy">Sarah Jenkins</p>
+                        <p class="text-xs text-gray-400">Local Guide, Google Reviews</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-cream p-8 rounded-2xl italic text-gray-700 relative text-left">
+                <span class="absolute -top-4 left-8 text-6xl text-blue-200">“</span>
+                <p class="mb-6">"Online booking is a breeze. I can schedule appointments at midnight while sitting on my couch. The pricing is transparent and totally worth it."</p>
+                <div class="flex items-center gap-4 not-italic">
+                    <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                    <div class="leading-tight">
+                        <p class="font-bold text-navy">Marcus T.</p>
+                        <p class="text-xs text-gray-400">Yelp Reviewer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-cream p-8 rounded-2xl italic text-gray-700 relative text-left hidden lg:block">
+                <span class="absolute -top-4 left-8 text-6xl text-blue-200">“</span>
+                <p class="mb-6">"Their 'Paws-First' approach actually works. My dog used to hate groomers, but now she wags her tail when we pull into the driveway!"</p>
+                <div class="flex items-center gap-4 not-italic">
+                    <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                    <div class="leading-tight">
+                        <p class="font-bold text-navy">Emily Rivera</p>
+                        <p class="text-xs text-gray-400">Client since 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 px-6 lg:px-12 bg-white max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold text-navy text-center mb-12">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+            <details class="group bg-gray-50 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+                <summary class="flex justify-between items-center cursor-pointer font-bold text-navy text-lg">
+                    Do you require proof of vaccinations?
+                    <span class="transition group-open:rotate-180">▼</span>
+                </summary>
+                <p class="mt-4 text-gray-600">Yes. For the safety of all pets, we require proof of Rabies, Distemper, and Bordetella vaccinations for all grooming appointments.</p>
+            </details>
+            <details class="group bg-gray-50 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+                <summary class="flex justify-between items-center cursor-pointer font-bold text-navy text-lg">
+                    How long does a full groom take?
+                    <span class="transition group-open:rotate-180">▼</span>
+                </summary>
+                <p class="mt-4 text-gray-600">Typically between 2 to 4 hours depending on the size and coat condition. We will text you 15 minutes before your pup is ready for pickup.</p>
+            </details>
+            <details class="group bg-gray-50 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+                <summary class="flex justify-between items-center cursor-pointer font-bold text-navy text-lg">
+                    Can I stay with my pet during grooming?
+                    <span class="transition group-open:rotate-180">▼</span>
+                </summary>
+                <p class="mt-4 text-gray-600">To keep pets calm and focused, we ask that you drop them off. Most pets behave much better when their owners aren't in their direct line of sight!</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white pt-20 pb-10 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-blue-900 pb-12 mb-10">
+            <div class="space-y-6">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-navy font-bold">SD</div>
+                    <span class="text-xl font-bold tracking-tight">The Spotted Dog Pet Spa</span>
+                </div>
+                <p class="text-blue-200">Premium dog spa and grooming services dedicated to the health and happiness of your pets.</p>
+                <div class="flex gap-4">
+                    <div class="w-8 h-8 bg-blue-800 rounded-full"></div>
+                    <div class="w-8 h-8 bg-blue-800 rounded-full"></div>
+                    <div class="w-8 h-8 bg-blue-800 rounded-full"></div>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-bold mb-6 text-lg">Quick Links</h4>
+                <ul class="space-y-4 text-blue-200">
+                    <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="#services" class="hover:text-white transition">Services</a></li>
+                    <li><a href="#booking" class="hover:text-white transition">Book Appointment</a></li>
+                    <li><a href="#" class="hover:text-white transition">Gift Cards</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-6 text-lg">Hours</h4>
+                <ul class="space-y-2 text-blue-200 text-sm">
+                    <li class="flex justify-between"><span>Monday</span> <span class="text-white">Closed</span></li>
+                    <li class="flex justify-between"><span>Tue - Fri</span> <span class="text-white">8:00 AM - 6:00 PM</span></li>
+                    <li class="flex justify-between"><span>Saturday</span> <span class="text-white">9:00 AM - 4:00 PM</span></li>
+                    <li class="flex justify-between"><span>Sunday</span> <span class="text-white">Closed</span></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-6 text-lg">Our Location</h4>
+                <p class="text-blue-200 mb-4">123 Pet Lane, Suite 100<br>Dogwood City, CA 90210</p>
+                <div class="bg-blue-800 h-32 rounded-xl overflow-hidden grayscale">
+                    <div class="w-full h-full flex items-center justify-center text-xs opacity-50">Map Integration Here</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-blue-400">
+            <p>&copy; 2024 The Spotted Dog Pet Spa. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">ADA Compliance</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Call Button -->
+    <div class="fixed bottom-6 right-6 md:hidden z-50">
+        <a href="tel:+15551234567" class="bg-blue-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+    </div>
+
+    <script>
+        // Header shadow effect on scroll
+        window.onscroll = function() {
+            const header = document.getElementById('main-header');
+            if (window.pageYOffset > 50) {
+                header.classList.add('scrolled');
+                header.classList.remove('md:bg-transparent');
+            } else {
+                header.classList.remove('scrolled');
+                header.classList.add('md:bg-transparent');
+            }
+        };
+    </script>
+</body>
+</html>
